@@ -4,7 +4,7 @@
   "description": "An course app to learn basics of javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/chrisandoX/javascript-course/issues"
   },
-  "homepage": "https://github.com/chrisandoX/javascript-course#readme"
+  "homepage": "https://github.com/chrisandoX/javascript-course#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
 }
