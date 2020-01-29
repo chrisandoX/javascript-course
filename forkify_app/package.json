@@ -1,0 +1,19 @@
+{
+  "name": "forkify_app",
+  "version": "1.0.0",
+  "description": "An course app to learn basics of javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisandoX/javascript-course.git"
+  },
+  "author": "Krzysztof Zurad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisandoX/javascript-course/issues"
+  },
+  "homepage": "https://github.com/chrisandoX/javascript-course#readme"
+}
