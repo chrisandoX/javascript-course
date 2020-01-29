@@ -6,7 +6,7 @@ https://www.udemy.com/course/the-complete-javascript-course/
 To run:
 
 ```
-open idex.html
+open index.html
 ```
 
 A default browser should open the web app ready to play with.
