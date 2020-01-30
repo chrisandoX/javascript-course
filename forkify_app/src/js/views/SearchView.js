@@ -7,10 +7,10 @@ const renderRecipe = recipe => {
         <li>
             <a class="results__link href="#${recipe.recipe_id}">
                 <figure class="results__fig">
-                    <img src="${recipe.image_url}" alt="${recipe.title}">
+                    <img src="${recipe.image_url}" alt="${limitRecipeTitle(recipe.title)}">
                 </figure>
                 <div class="results__data">
-                    <h4 class="results__name">${recipe.title}</h4>
+                    <h4 class="results__name">${limitRecipeTitle(recipe.title)}</h4>
                     <p class="results__author">${recipe.publisher}</p>
                 </div>
             </a>
@@ -24,4 +24,12 @@ export const renderResults = recipes =>{
 
 export const clearResults = () => {
     elements.searchResultList.innerHTML = '';
+}
+
+const limitRecipeTitle = (title, limit=5) => {
+    if(title.length > limit){
+        let title_trimmed = title.slice(0, limit+1);
+        return title_trimmed.slice(0, title_trimmed.lastIndexOf(" ") != -1 ? title_trimmed.lastIndexOf(" ") : limit);
+    }
+    return title
 }
