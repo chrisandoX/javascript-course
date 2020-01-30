@@ -18,7 +18,7 @@ const controlSearch = async  (e) => {
 
     // Search for recepies
     await state.search.getResults();
-    clearLoader(elements.searchRes);
+    clearLoader();
     console.log(state.search.result);
     searchView.renderResults(state.search.result);
 }
